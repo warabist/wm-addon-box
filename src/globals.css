@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: white
+}
+
+h2 {
+    font-family: sans-serif;
+    color: white
+}
+
+h3 {
+    font-family: sans-serif;
+    color: white
+}
+
+h4 {
+    font-family: sans-serif;
+    color: white
+}
+
+p {
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 3px;
+}
+
+li {
+    font-family: sans-serif;
+    color: rgb(230, 230, 230);
+}
+
+pre {
+    padding: 10px;
+    background-color: rgb(49, 49, 49);
+    border: 2px solid rgb(69, 69, 69);
+}
+
+pre code {
+    color: rgb(217, 217, 217);
+    font-family: sans-serif
+}
+
+button {
+    background-color: rgb(49, 49, 49);
+    height: 30px;
+    width: 70px;
+    margin-top: 10px;
+}
+
+button a {
+    color: white;
+    font-size: larger;
+}
+
+a {
+    color: rgb(0, 140, 255);
+}
+
+.list-point-white {
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 3px;
+}
+
+body {
+    background-color: rgb(35, 35, 35);
+}
+
+header {
+    margin-top: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+}
+
+header img {
+    height: 70px;
+    width: 70px;
+    float: left;
+}
+
+header h1 {
+    color: aliceblue;
+    line-height: 70px;
+    margin-left: 10px;
+    float: left;
+}
+
+header ul {
+    list-style: none;
+    float: left;
+}
+
+.header-list-item {
+    font-size: large;
+    line-height: 70px;
+    margin-left: 50px;
+}
+
+.title-and-image-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title-and-image-card-grid-item {
+    height: 270px;
+    width: 320px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 2px solid rgb(107, 107, 107);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.title-and-image-card-grid-item a {
+    text-decoration: none;
+}
+
+.title-and-image-card-grid-item h2 {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.title-and-image-card-grid-item img {
+    display: block;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+
+.menu-background {
+    height: auto;
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 2px solid rgb(107, 107, 107);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.property-grid {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.property-grid-item {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-bottom: 4px;
+}
+
+.property-grid-item:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.vertical-line {
+    border-left: 3px solid rgb(93, 93, 93);
+    margin-bottom: 40px;
+}
+
+.description {
+    margin-left: 10px;
+}
+
+code {
+    font-size: large;
+}
+
+.type-color {
+    color: rgb(0, 94, 181);
+    font-weight: bold;
+}
+
+.default-value-color {
+    color: rgb(0, 180, 9);
+    font-weight: bold;
+}
+
+.description-color {
+    color: rgb(179, 75, 0);
+    font-weight: bold;
+}
+
+.example-color {
+    color: rgb(165, 0, 191);
+    font-weight: bold;
+}
+
+.property-color {
+    color: rgb(201, 148, 0);
+    font-weight: bold;
+    font-family: sans-serif;
+}
