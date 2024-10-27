@@ -1,16 +1,17 @@
 import '@/globals.css';
+import iconImage from '@/icon.png';
 
 export default function GlobalLayout({ children }) {
 
     return (
         <html>
             <head>
-                <meta charSet="utf-8"></meta>
-                <link rel="shortcut icon" href="icon.png"></link>
+                <meta charSet='utf-8'></meta>
+                <link rel='shortcut icon' href={iconImage.src}></link>
             </head>
             <body>
                 <header>
-                    <img src='/icon.png' alt=''></img>
+                    <img src={iconImage.src} alt=''></img>
                     <h1>WM-ADDON-BOX</h1>
                     <ul>
                         <li>

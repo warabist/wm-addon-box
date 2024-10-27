@@ -1,4 +1,7 @@
 import TitleAndImageCardGrid from '@/components/TitleAndImageCardGrid';
+import itemImage from '@/images/item.png';
+import entityImage from '@/images/entity.png';
+import blockImage from '@/images/block.png';
 
 export default function Home() {
 
@@ -8,17 +11,17 @@ export default function Home() {
                 TitleAndImageCardGrid([
                     {
                         title: 'アイテム',
-                        imagePath: '/images/item.png',
+                        image: itemImage,
                         pagePath: '/'
                     },
                     {
                         title: 'エンティティ',
-                        imagePath: '/images/entity.png',
+                        image: entityImage,
                         pagePath: '/'
                     },
                     {
                         title: 'ブロック',
-                        imagePath: '/images/block.png',
+                        image: blockImage,
                         pagePath: '/'
                     }
                 ])
