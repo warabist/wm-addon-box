@@ -23,7 +23,7 @@ export default function GlobalLayout({ children }) {
                     <h1>WM-ADDON-BOX</h1>
                     <ul>
                         <li>
-                            <a href={(isProduction() ? 'wm-addon-box' : '') + '/'} className='header-list-item'>ホーム</a>
+                            <a href={'/'} className='header-list-item'>ホーム</a>
                             <a href='https://x.com/motiwarabist' className='header-list-item'>X</a>
                             <a href='https://discord.gg/ZyrbU3GkAW' className='header-list-item'>Discord</a>
                         </li>
