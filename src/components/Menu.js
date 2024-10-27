@@ -1,3 +1,5 @@
+import isProduction from "@/isProduction";
+
 /**
  * タイトルとリンクテキストで構成されるメニュー。
  * @param {string} title 
@@ -11,7 +13,7 @@ export default function Munu(title, listItems) {
 
     const list = listItems.map(listItem =>
         <li className='list-point-white'>
-            <a className='link-text' href={listItem.pagePath}>{listItem.text}</a>
+            <a className='link-text' href={(isProduction() ? 'wm-addon-box' : '') + listItem.pagePath}>{listItem.text}</a>
         </li>
     );
 
