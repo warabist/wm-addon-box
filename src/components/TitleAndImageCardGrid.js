@@ -1,4 +1,4 @@
-import isProduction from "@/isProduction";
+import Link from 'next/link';
 
 /**
  * タイトルと画像を含んだアイテムを持つグリッド。クリックするとパスのページに飛ぶ。
@@ -17,20 +17,20 @@ import isProduction from "@/isProduction";
  * @returns {JSX.Element}
  */
 export default function TitleAndImageCardGrid(items) {
-    return (
 
-        <div className='title-and-image-card-grid' key='gridItems'>
-            {
-                items.map(item =>
-                    <div className='title-and-image-card-grid-item'>
-                        <a href={(isProduction() ? 'wm-addon-box' : '') + item.pagePath}>
-                            <h2>{item.title}</h2>
-                            <img src={item.image.src} alt=''></img> {/**画像の比率は7:5*/}
-                        </a>
-                    </div>
-                )
-            }
+    const gridItems = items.map(item =>
+        <div className='title-and-image-card-grid-item'>
+            <Link href={item.pagePath}>
+                <h2>{item.title}</h2>
+                <img src={item.image.src} alt=''></img> {/**画像の比率は7:5*/}
+            </Link>
         </div>
-
     );
+
+    return (
+        <div className='title-and-image-card-grid' key='gridItems'>
+            {gridItems}
+        </div>
+    );
+
 }
