@@ -1,5 +1,3 @@
-const dir = process.env.BACKEND_URL;
-
 /**
  * タイトルと画像を含んだアイテムを持つグリッド。クリックするとパスのページに飛ぶ。
  * @param {{ 

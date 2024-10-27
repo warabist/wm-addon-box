@@ -1,23 +1,30 @@
 import '@/globals.css';
 import iconImage from '@/icon.png';
 
+export const metadata = {
+    title: {
+        template: '%s | WM-ADDON-BOX'
+    },
+    icons: {
+        icon: iconImage.src,
+        shortcut: iconImage.src,
+        apple: iconImage.src
+    }
+};
+
 export default function GlobalLayout({ children }) {
 
     return (
         <html>
-            <head>
-                <meta charSet='utf-8'></meta>
-                <link rel='shortcut icon' href={iconImage.src}></link>
-            </head>
             <body>
                 <header>
                     <img src={iconImage.src} alt=''></img>
                     <h1>WM-ADDON-BOX</h1>
                     <ul>
                         <li>
-                            <a href='../' className='header-list-item'>ホーム</a>
-                            <a href='../' className='header-list-item'>X</a>
-                            <a href='../' className='header-list-item'>Discord</a>
+                            <a href='/' className='header-list-item'>ホーム</a>
+                            <a href='https://x.com/motiwarabist' className='header-list-item'>X</a>
+                            <a href='https://discord.gg/ZyrbU3GkAW' className='header-list-item'>Discord</a>
                         </li>
                     </ul>
                 </header>

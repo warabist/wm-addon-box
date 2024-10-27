@@ -148,6 +148,11 @@ header ul {
     margin-top: 30px;
 }
 
+.menu-background h2 {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
 .property-grid {
     display: grid;
     width: auto;
