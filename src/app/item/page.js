@@ -12,7 +12,7 @@ export default function Page() {
                 Menu('アイテム', [
                     {
                         text: 'ディスクリプション',
-                        pagePath: ''
+                        pagePath: '/item/description'
                     },
                     {
                         text: 'コンポーネント',
