@@ -7,7 +7,7 @@ import CodeBlock from "./CodeBlock";
  * @property {string} description
  * @property {string} type
  * @property {Definition[]} properties
- * @property {{ name: string, path: string }[]} examples
+ * @property {{ name: string, code: string }[]} examples
  */
 
 /**
@@ -19,12 +19,8 @@ export default function PropertyDefinition(definition, isChild = false) {
 
     const { name, description, type, properties, examples } = definition;
 
-    const propertyList = (properties !== undefined) ? properties.map((property, index) => <div key={String(index)}>{PropertyDefinition(property, true)}</div>) : 0;
-
     return (
-        <div style={isChild ? {} : {
-            margin: "30px"
-        }}>
+        <div>
 
             {isChild ? <h4>{name}</h4> : <h2>{name}</h2>}
             <VerticalLine element={
@@ -51,7 +47,7 @@ export default function PropertyDefinition(definition, isChild = false) {
                                 {type.includes('object[]') ? 'アイテムプロパティ' : 'プロパティ'}
                             </summary>
                             <div className="description"> {/**子を右へ */}
-                                {propertyList}
+                                {properties.map((property, index) => <div key={String(index)}>{PropertyDefinition(property, true)}</div>)}
                             </div>
                         </details> : <div></div>
                     }

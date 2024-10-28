@@ -10,23 +10,23 @@ export const metadata = {
 export default function Home() {
 
     return (
-        <div>
+        <div className='main-content'>
             {
                 TitleAndImageCardGrid([
                     {
                         title: 'アイテム',
                         image: itemImage,
-                        pagePath: '/item'
+                        path: '/item'
                     },
                     {
                         title: 'エンティティ',
                         image: entityImage,
-                        pagePath: ''
+                        path: ''
                     },
                     {
                         title: 'ブロック',
                         image: blockImage,
-                        pagePath: ''
+                        path: ''
                     }
                 ])
             }

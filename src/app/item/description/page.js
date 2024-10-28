@@ -5,7 +5,8 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 export default function Page() {
 
     return (
-        <div>
+        <div className="main-content">
+            <title>アイテム/デスクリプション</title>
             {PropertyDefinition({
                 name: 'description',
                 description: 'アイテムのIDや種類を決めることができるプロパティ。',
@@ -42,7 +43,20 @@ export default function Page() {
                 examples: [
                     {
                         name: 'example',
-                        path: 'https://warabist.github.io/wm-addon-box/item/description/example.text'
+                        code: `{
+    "format_version": "1.21.30",
+    "minecraft:item": {
+      "description": { //これ
+        "identifier": "sample:item",
+        "menu_category": {
+            "group": "itemGroup.name.sword",
+            "category": "equipment",
+            "is_hidden_in_commands": false
+        }
+      },
+      "components": {...} //省略
+    }
+}`
                     }
                 ]
             })}

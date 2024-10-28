@@ -18,18 +18,16 @@ import Link from 'next/link';
  */
 export default function TitleAndImageCardGrid(items) {
 
-    const gridItems = items.map(item =>
-        <div className='title-and-image-card-grid-item'>
-            <Link href={item.pagePath}>
-                <h2>{item.title}</h2>
-                <img src={item.image.src} alt=''></img> {/**画像の比率は7:5*/}
-            </Link>
-        </div>
-    );
-
     return (
-        <div className='title-and-image-card-grid' key='gridItems'>
-            {gridItems}
+        <div className='title-and-image-card-grid'>
+            {items.map((item, index) =>
+                <div className='title-and-image-card-grid-item' key={String(index)}>
+                    <Link href={item.pagePath}>
+                        <h2>{item.title}</h2>
+                        <img src={item.image.src} alt=''></img> {/**画像の比率は7:5*/}
+                    </Link>
+                </div>
+            )}
         </div>
     );
 

@@ -1,8 +1,8 @@
 /**
  * コードブロック
- * @param {{ name: string, path: string }} data 
+ * @param {{ name: string, code: string }} data 
  */
-export default async function CodeBlock(data) {
+export default function CodeBlock(data) {
 
     return (
         <div>
@@ -24,7 +24,7 @@ export default async function CodeBlock(data) {
             }}><a id={data.name + "copy-button"}>Copy</a></button>
 
             {/**コードブロック */}
-            <pre><code id={data.name + "code"}>{(await (await fetch(data.path)).text())}</code></pre>
+            <pre><code id={data.name + "code"}>{data.code}</code></pre>
 
         </div>
     );

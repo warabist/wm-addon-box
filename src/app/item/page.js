@@ -7,7 +7,7 @@ export const metadata = {
 export default function Page() {
 
     return (
-        <div>
+        <div className='main-content'>
             {
                 Menu('アイテム', [
                     {
@@ -16,7 +16,7 @@ export default function Page() {
                     },
                     {
                         text: 'コンポーネント',
-                        pagePath: ''
+                        pagePath: '/item/component'
                     }
                 ])
             }

@@ -5,22 +5,22 @@ import Link from 'next/link';
  * @param {string} title 
  * @param {{
  *   text: string,
- *   pagePath: string
+ *   path: string
  * }[]} listItems
  * @returns {JSX.Element}
  */
 export default function Munu(title, listItems) {
 
-    const list = listItems.map(listItem =>
-        <li className='list-point-white'>
-            <Link className='link-text' href={listItem.pagePath}>{listItem.text}</Link>
-        </li>
-    );
-
     return (
         <div className='menu-background'>
             <h2>{title}</h2>
-            <ul key='list'>{list}</ul>
+            <ul>
+                {listItems.map((listItem, index) =>
+                    <li className='list-point-white' key={String(index)}>
+                        <Link className='link-text' href={listItem.path}>{listItem.text}</Link>
+                    </li>
+                )}
+            </ul>
         </div>
     );
 
