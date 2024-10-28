@@ -12,7 +12,7 @@ import Link from 'next/link';
  *   blurWidth: number,
  *   blurHeight: number
  * }, 
- * pagePath: string
+ * page: string
  * }[]} items
  * @returns {JSX.Element}
  */
@@ -22,7 +22,7 @@ export default function TitleAndImageCardGrid(items) {
         <div className='title-and-image-card-grid'>
             {items.map((item, index) =>
                 <div className='title-and-image-card-grid-item' key={String(index)}>
-                    <Link href={item.pagePath}>
+                    <Link href={item.path}>
                         <h2>{item.title}</h2>
                         <img src={item.image.src} alt=''></img> {/**画像の比率は7:5*/}
                     </Link>

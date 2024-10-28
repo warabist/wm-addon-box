@@ -32,6 +32,10 @@ export default function Page() {
                 {
                     name: 'allow_off_hand - オフハンドの許可',
                     path: '/item/component/allow_off_hand'
+                },
+                {
+                    name: 'block_placer - ブロック設置',
+                    path: '/item/component/block_placer'
                 }
             ])}
         </div>

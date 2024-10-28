@@ -1,5 +1,6 @@
 import VerticalLine from "./VerticalLine";
 import CodeBlock from "./CodeBlock";
+import parse from 'html-react-parser';
 
 /**
  * @typedef {Object} Definition
@@ -29,7 +30,7 @@ export default function PropertyDefinition(definition, isChild = false) {
                     {/**説明 */}
                     {
                         (description !== undefined) ? <p><span className="description-color">説明: </span>
-                            {description}
+                            {parse(description)}
                         </p> : <div></div>
                     }
 
