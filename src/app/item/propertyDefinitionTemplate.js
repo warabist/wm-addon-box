@@ -6,7 +6,7 @@ export default function Page() {
 
     return (
         <div className="main-content">
-            <title></title>
+            <title>アイテム/コンポーネント/</title>
             {PropertyDefinition({
                 name: '',
                 description: '',

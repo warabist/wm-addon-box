@@ -16,7 +16,7 @@ export default function Page() {
                     },
                     {
                         text: 'コンポーネント',
-                        path: '/item/component'
+                        path: '/item/components'
                     }
                 ])
             }

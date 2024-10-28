@@ -12,7 +12,7 @@ import parse from 'html-react-parser';
  */
 
 /**
- * JSONのプロパティに入る値の説明
+ * JSONの、プロパティに入る値の説明
  * @param {Definition} definition 
  * @param {boolean} isChild 
  */

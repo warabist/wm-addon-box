@@ -6,7 +6,7 @@ export default function Page() {
 
     return (
         <div className="main-content">
-            <title></title>
+            <title>アイテム/コンポーネント/block_placer</title>
             {PropertyDefinition({
                 name: 'block_placer - ブロック設置',
                 description: 'ブロックを設置できるようにする。',
@@ -34,8 +34,18 @@ export default function Page() {
                             },
                             {
                                 name: 'tags',
-                                description: 'ブロックのタグ。molangで指定する。<a href="https://learn.microsoft.com/en-us/minecraft/creator/reference/content/blockreference/examples/vanillablocktags?view=minecraft-bedrock-stable">バニラブロックのタグ一覧</a><br>(例: query.any_tag(\'stone\', \'wood\')、query.all_tag(\'stone\', \'minecraft:iron_tier_destructible\'))',
-                                type: 'string'
+                                description: 'ブロックのタグ。molangで指定する。<a href="https://learn.microsoft.com/en-us/minecraft/creator/reference/content/blockreference/examples/vanillablocktags?view=minecraft-bedrock-stable">バニラブロックのタグ一覧</a>',
+                                type: 'string',
+                                examples: [
+                                    {
+                                        name: 'use_on/tags-any',
+                                        code: `"tags": "query.any_tag('stone', 'wood')"`
+                                    },
+                                    {
+                                        name: 'use_on/tags-all',
+                                        code: `"tags": "query.all_tag('stone', 'minecraft:iron_tier_destructible')"`
+                                    }
+                                ]
                             }
                         ]
                     }

@@ -35,18 +35,16 @@ li {
 }
 
 code {
-    font-size: large;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgb(217, 217, 217);
+    font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
 pre {
     padding: 10px;
     background-color: rgb(49, 49, 49);
     border: 2px solid rgb(69, 69, 69);
-}
-
-pre code {
-    color: rgb(217, 217, 217);
-    font-family: sans-serif
 }
 
 button {
