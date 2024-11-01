@@ -1,25 +1,26 @@
 'use client';
-
 import PropertyDefinition from "@/components/PropertyDefinition";
 
-export default function Page() {
+const title = 'アイテム Aコンポーネント';
 
+const definition = PropertyDefinition({
+    name: '',
+    description: '',
+    type: '',
+    properties: [],
+    examples: [
+        {
+            name: 'example',
+            code: ``
+        }
+    ]
+});
+
+export default function Page() {
     return (
         <div className="main-content">
-            <title>アイテム/コンポーネント/</title>
-            {PropertyDefinition({
-                name: '',
-                description: '',
-                type: '',
-                properties: [],
-                examples: [
-                    {
-                        name: 'example',
-                        code: ``
-                    }
-                ]
-            })}
+            <title>{title}</title>
+            {definition}
         </div>
     );
-
 }
