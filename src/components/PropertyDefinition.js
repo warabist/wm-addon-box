@@ -1,6 +1,7 @@
 import VerticalLine from "./VerticalLine";
 import CodeBlock from "./CodeBlock";
 import parse from 'html-react-parser';
+import { useEffect } from "react";
 
 /**
  * @typedef {Object} Definition
