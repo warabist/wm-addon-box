@@ -66,7 +66,7 @@ const propertyList = ListGrid('コンポーネント一覧', [
     },
     {
         name: 'durability - 耐久',
-        path: ''
+        path: '/durability'
     },
     {
         name: 'durability_sensor - 耐久センサー',
