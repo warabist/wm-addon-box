@@ -110,7 +110,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'interact_button - 使用ボタン',
-        path: ''
+        path: '/interact_button'
     },
     {
         name: 'liquid_clipped - 液体への判定',
