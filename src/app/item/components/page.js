@@ -134,7 +134,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'repairable - 修理',
-        path: ''
+        path: '/repairable'
     },
     {
         name: 'shooter - 発射',
