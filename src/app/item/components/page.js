@@ -146,7 +146,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'stacked_by_data - 別データ値とのスタック',
-        path: ''
+        path: '/stacked_by_data'
     },
     {
         name: 'storage_item - ストレージ',
