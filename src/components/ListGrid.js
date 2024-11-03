@@ -7,7 +7,7 @@ import Link from "next/link";
  * @param {{ name: string, path: string }[]} properties 
  * @param {string} basePath
  */
-export default function PropertyList(title, properties, basePath = '') {
+export default function ListGrid(title, properties, basePath = '') {
 
     return (
         <div>
@@ -15,9 +15,11 @@ export default function PropertyList(title, properties, basePath = '') {
             <VerticalLine element={
                 <div className="list-grid">
                     {properties.map((property, index) =>
-                        <Link className="list-grid-item" href={basePath + property.path} key={String(index)}>
-                            <li>{property.name}</li>
-                        </Link>
+                        <li key={String(index)} className="list-grid-item">
+                            <Link href={basePath + property.path}>
+                                {property.name}
+                            </Link>
+                        </li>
                     )}
                 </div>
             } />

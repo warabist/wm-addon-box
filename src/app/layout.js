@@ -15,7 +15,9 @@ export default function GlobalLayout({ children }) {
         <html>
             <body>
                 <header>
-                    <img src={iconImage.src} alt=''></img>
+                    <Link className='link-text' href='/'>
+                        <img src={iconImage.src} alt=''></img>
+                    </Link>
                     <h1>WM-ADDON-BOX</h1>
                 </header>
                 {children}

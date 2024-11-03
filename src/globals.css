@@ -197,22 +197,17 @@ header h1 {
 }
 
 .list-grid-item {
+    margin-bottom: 5px;
+}
+
+.list-grid-item a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin-bottom: 4px;
+    color: rgb(220, 220, 220);
 }
 
-@media screen and (max-width:500px) {
-    .list-grid-item {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        margin-bottom: 10px;
-    }
-}
-
-.list-grid-item:hover {
+.list-grid-item a:hover {
     text-decoration: underline;
-    color: white;
+    color: rgb(220, 220, 220);
 }
 
 .vertical-line {

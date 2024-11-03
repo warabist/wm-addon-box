@@ -19,12 +19,12 @@ export default function Home() {
                         path: '/item'
                     },
                     {
-                        title: 'エンティティ',
+                        title: 'エンティティ(準備中)',
                         image: entityImage,
                         path: ''
                     },
                     {
-                        title: 'ブロック',
+                        title: 'ブロック(準備中)',
                         image: blockImage,
                         path: ''
                     }

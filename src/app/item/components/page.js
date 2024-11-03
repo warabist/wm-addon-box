@@ -1,7 +1,7 @@
 'use client';
 
 import PropertyDefinition from "@/components/PropertyDefinition";
-import PropertyList from "@/components/PropertyList";
+import ListGrid from "@/components/ListGrid";
 
 const definition = PropertyDefinition({
     name: 'components',
@@ -23,7 +23,7 @@ const definition = PropertyDefinition({
     ]
 });
 
-const propertyList = PropertyList('コンポーネント一覧', [
+const propertyList = ListGrid('コンポーネント一覧', [
     {
         name: 'allow_off_hand - オフハンドの許可',
         path: '/allow_off_hand'
@@ -62,7 +62,7 @@ const propertyList = PropertyList('コンポーネント一覧', [
     },
     {
         name: 'display_name - 表示名',
-        path: ''
+        path: '/display_name'
     },
     {
         name: 'durability - 耐久',
