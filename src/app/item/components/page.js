@@ -78,7 +78,7 @@ const propertyList = ListGrid('コンポーネント一覧', [
     },
     {
         name: 'enchantable - エンチャント',
-        path: ''
+        path: '/enchantable'
     },
     {
         name: 'entity_placer - エンティティ設置',
