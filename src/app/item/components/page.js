@@ -162,7 +162,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'use_animation - 使用アニメーション',
-        path: ''
+        path: '/use_animation'
     },
     {
         name: 'use_modifiers - 使用設定',
