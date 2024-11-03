@@ -82,7 +82,7 @@ const propertyList = ListGrid('コンポーネント一覧', [
     },
     {
         name: 'entity_placer - エンティティ設置',
-        path: ''
+        path: '/entity_placer'
     },
     {
         name: 'food - 食料',
