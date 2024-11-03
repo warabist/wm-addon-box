@@ -90,7 +90,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'fuel - 燃料',
-        path: ''
+        path: '/fuel'
     },
     {
         name: 'glint - 輝き',
