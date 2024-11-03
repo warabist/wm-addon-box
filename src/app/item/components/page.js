@@ -97,8 +97,8 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
         path: '/glint'
     },
     {
-        name: 'hand_equipped - 武器のように所持',
-        path: ''
+        name: 'hand_equipped - 武器として所持',
+        path: '/hand_equipped'
     },
     {
         name: 'hover_text_color - ホバー時の文字色',
