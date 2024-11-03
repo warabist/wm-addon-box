@@ -26,7 +26,15 @@ const definition = PropertyDefinition({
                 {
                     name: 'states',
                     description: 'ブロックのステート。使うにはnameが必要。',
-                    type: 'object'
+                    type: 'object',
+                    examples: [
+                        {
+                            name: 'states-example',
+                            code: `"states": {
+    "facing_direction": 1
+}`
+                        }
+                    ]
                 },
                 {
                     name: 'tags',
