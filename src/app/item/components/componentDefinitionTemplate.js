@@ -10,7 +10,7 @@ const definition = <PropertyDefinition definition={{
     properties: [],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: ``
         }
     ]
