@@ -45,6 +45,7 @@ pre {
     padding: 10px;
     background-color: rgb(49, 49, 49);
     border: 2px solid rgb(69, 69, 69);
+    overflow: auto;
 }
 
 button {

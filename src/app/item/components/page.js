@@ -177,7 +177,7 @@ const propertyList = PropertyList('コンポーネント一覧', [
 export default function Page() {
     return (
         <div className="main-content">
-            <title>アイテム/コンポーネント</title>
+            <title>アイテム コンポーネント</title>
             {definition}
             {propertyList}
         </div>
