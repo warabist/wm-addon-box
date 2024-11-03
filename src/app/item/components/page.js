@@ -158,7 +158,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'throwable - 投擲',
-        path: ''
+        path: '/throwable'
     },
     {
         name: 'use_animation - 使用アニメーション',
