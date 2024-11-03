@@ -15,11 +15,11 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:allow_off_hand": true`
         },
         {
-            name: 'example-object',
+            id: 'example-object',
             code: `"minecraft:allow_off_hand": {
     "value": true
 }`

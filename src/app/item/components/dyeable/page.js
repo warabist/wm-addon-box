@@ -16,13 +16,13 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example-code',
+            id: 'example-code',
             code: `"minecraft:dyeable": {
     "default_color": "#fef4f4"
 }`
         },
         {
-            name: 'example-rgb',
+            id: 'example-rgb',
             code: `"minecraft:dyeable": {
     "default_color": [ 254, 244, 244 ]
 }`

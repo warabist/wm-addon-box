@@ -15,11 +15,11 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:can_destroy_in_creative": false`
         },
         {
-            name: 'example-object',
+            id: 'example-object',
             code: `"minecraft:can_destroy_in_creative": {
     "value": false
 }`

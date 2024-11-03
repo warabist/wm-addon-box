@@ -9,7 +9,7 @@ const definition = <PropertyDefinition definition={{
     type: 'string[]',
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:custom_components": [ "my_component:on_use" ]`
         }
     ]

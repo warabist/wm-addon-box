@@ -38,7 +38,7 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `{
     "format_version": "1.21.30",
     "minecraft:item": {

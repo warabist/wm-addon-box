@@ -31,7 +31,7 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:durability": {
     "damage_chance": {
         "min": 0,

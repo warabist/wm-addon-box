@@ -16,7 +16,7 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:bundle_interaction": {
     "num_viewable_slots": 32
 }`

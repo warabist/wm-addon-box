@@ -9,7 +9,7 @@ import { useEffect } from "react";
  * @property {string} description
  * @property {string} type
  * @property {Definition[]} properties
- * @property {{ name: string, code: string }[]} examples
+ * @property {{ id: string, code: string }[]} examples
  */
 
 /**
@@ -63,7 +63,7 @@ export default function PropertyDefinition({ definition, isChild = false }) {
 
                             {/**コード */}
                             {examples.map((example, index) =>
-                                <div key={String(index)}><CodeBlock data={example} /></div>
+                                <div key={String(index)}><CodeBlock id={example.id} code={example.code} /></div>
                             )}
                         </div> : <div></div>
                     }

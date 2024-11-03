@@ -21,7 +21,7 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:cooldown": {
     "category": "my_food",
     "duration": 10

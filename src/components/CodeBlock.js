@@ -1,30 +1,30 @@
 /**
  * コードブロック
  * @param {Object} props
- * @param {{ name: string, code: string }} props.data 
+ * @param {string} props.id
+ * @param {string} props.code
  */
-export default function CodeBlock({ data }) {
+export default function CodeBlock({ id, code }) {
     return (
         <div>
 
             {/**ボタン */}
             <button onClick={() => {
-                //コードをコピーする
-                const code = document.getElementById(data.name + "code");
-                navigator.clipboard.writeText(code.textContent);
+                //コードをコピー
+                navigator.clipboard.writeText(code);
 
                 //CopyをCopiedに変更
-                const copyButton = document.getElementById(data.name + "copy-button");
+                const copyButton = document.getElementById(id + "-copy-button");
                 copyButton.innerHTML = 'Copied';
 
                 //CopiedをCopyに直す
                 setTimeout(() => {
                     copyButton.innerHTML = 'Copy';
                 }, 1000);
-            }}><a id={data.name + "copy-button"}>Copy</a></button>
+            }}><a id={id + "-copy-button"}>Copy</a></button>
 
             {/**コードブロック */}
-            <pre><code id={data.name + "code"}>{data.code}</code></pre>
+            <pre><code>{code}</code></pre>
 
         </div>
     );

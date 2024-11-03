@@ -24,7 +24,7 @@ const definition = <PropertyDefinition definition={{
                     type: 'object',
                     examples: [
                         {
-                            name: 'states-example-dispense_on',
+                            id: 'states-example-dispense_on',
                             code: `"states": {
     "facing_direction": 1
 }`
@@ -37,11 +37,11 @@ const definition = <PropertyDefinition definition={{
                     type: 'string',
                     examples: [
                         {
-                            name: 'use_on/tags-any',
+                            id: 'use_on/tags-any',
                             code: `"tags": "query.any_tag('stone', 'wood')"`
                         },
                         {
-                            name: 'use_on/tags-all',
+                            id: 'use_on/tags-all',
                             code: `"tags": "query.all_tag('stone', 'minecraft:iron_tier_destructible')"`
                         }
                     ]
@@ -69,7 +69,7 @@ const definition = <PropertyDefinition definition={{
                     type: 'object',
                     examples: [
                         {
-                            name: 'states-example-use_on',
+                            id: 'states-example-use_on',
                             code: `"states": {
     "facing_direction": 1
 }`
@@ -82,11 +82,11 @@ const definition = <PropertyDefinition definition={{
                     type: 'string',
                     examples: [
                         {
-                            name: 'use_on/tags-any',
+                            id: 'use_on/tags-any',
                             code: `"tags": "query.any_tag('stone', 'wood')"`
                         },
                         {
-                            name: 'use_on/tags-all',
+                            id: 'use_on/tags-all',
                             code: `"tags": "query.all_tag('stone', 'minecraft:iron_tier_destructible')"`
                         }
                     ]
@@ -96,7 +96,7 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:entity_placer": {
     "entity": "minecraft:pig",
     "dispense_on": [

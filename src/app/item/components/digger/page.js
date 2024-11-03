@@ -29,7 +29,7 @@ const definition = <PropertyDefinition definition={{
                             type: 'object',
                             examples: [
                                 {
-                                    name: 'states-example',
+                                    id: 'states-example',
                                     code: `"states": {
     "facing_direction": 1
 }`
@@ -42,11 +42,11 @@ const definition = <PropertyDefinition definition={{
                             type: 'string',
                             examples: [
                                 {
-                                    name: 'destroy_speeds/block/tags-any',
+                                    id: 'destroy_speeds/block/tags-any',
                                     code: `"tags": "query.any_tag('stone', 'wood')"`
                                 },
                                 {
-                                    name: 'destroy_speeds/block/tags-all',
+                                    id: 'destroy_speeds/block/tags-all',
                                     code: `"tags": "query.all_tag('stone', 'minecraft:iron_tier_destructible')"`
                                 }
                             ]
@@ -68,7 +68,7 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:digger": {
     "destroy_speeds": [
         {

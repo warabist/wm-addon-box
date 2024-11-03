@@ -16,13 +16,13 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:display_name": {
     "value": "勇者の剣"
 }`
         },
         {
-            name: 'example-lang',
+            id: 'example-lang',
             code: `"minecraft:display_name": {
     "value": "item.apple.name"
 }`

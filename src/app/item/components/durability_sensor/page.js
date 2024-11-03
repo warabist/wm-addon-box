@@ -33,7 +33,7 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:durability_sensor": {
     "durability_thresholds": [
         {

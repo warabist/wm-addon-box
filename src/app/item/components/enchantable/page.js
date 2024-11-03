@@ -21,7 +21,7 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:enchantable": {
     "slot": "sword",
     "value": 100

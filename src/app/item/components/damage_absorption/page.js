@@ -16,7 +16,7 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:damage_absorption": {
     "absorbable_causes": [ "sonic_boom" ]
 }`

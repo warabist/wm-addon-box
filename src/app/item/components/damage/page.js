@@ -15,11 +15,11 @@ const definition = <PropertyDefinition definition={{
     ],
     examples: [
         {
-            name: 'example',
+            id: 'example',
             code: `"minecraft:damage": 8`
         },
         {
-            name: 'example-object',
+            id: 'example-object',
             code: `"minecraft:damage": {
     "value": 8
 }`
