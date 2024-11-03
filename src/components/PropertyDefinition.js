@@ -1,7 +1,6 @@
 import VerticalLine from "./VerticalLine";
 import CodeBlock from "./CodeBlock";
 import parse from 'html-react-parser';
-import { useState } from 'react';
 
 /**
  * @typedef {Object} Definition
