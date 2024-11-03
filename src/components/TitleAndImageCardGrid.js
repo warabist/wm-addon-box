@@ -18,7 +18,6 @@ import Link from 'next/link';
  * @returns {JSX.Element}
  */
 export default function TitleAndImageCardGrid({ items }) {
-
     return (
         <div className='title-and-image-card-grid'>
             {items.map((item, index) =>
@@ -31,5 +30,4 @@ export default function TitleAndImageCardGrid({ items }) {
             )}
         </div>
     );
-
 }

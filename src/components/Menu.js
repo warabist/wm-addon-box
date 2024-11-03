@@ -11,7 +11,6 @@ import Link from 'next/link';
  * @returns {JSX.Element}
  */
 export default function Munu({ title, listItems }) {
-
     return (
         <div className='menu-background'>
             <h2>{title}</h2>
@@ -24,5 +23,4 @@ export default function Munu({ title, listItems }) {
             </ul>
         </div>
     );
-
 }

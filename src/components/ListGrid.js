@@ -9,7 +9,6 @@ import Link from "next/link";
  * @param {string} props.basePath
  */
 export default function ListGrid({ title, listItems, basePath = '' }) {
-
     return (
         <div>
             <h2>{title}</h2>
@@ -26,5 +25,4 @@ export default function ListGrid({ title, listItems, basePath = '' }) {
             } />
         </div>
     );
-
 }

@@ -4,7 +4,6 @@
  * @param {{ name: string, code: string }} props.data 
  */
 export default function CodeBlock({ data }) {
-
     return (
         <div>
 
@@ -29,5 +28,4 @@ export default function CodeBlock({ data }) {
 
         </div>
     );
-
 }
