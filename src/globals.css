@@ -219,23 +219,23 @@ header h1 {
     margin-left: 10px;
 }
 
-.type-color {
-    color: rgb(0, 94, 181);
-    font-weight: bold;
-}
-
 .description-color {
-    color: rgb(179, 75, 0);
+    color: rgb(205, 85, 0);
     font-weight: bold;
 }
 
-.example-color {
-    color: rgb(165, 0, 191);
+.type-color {
+    color: rgb(0, 109, 210);
     font-weight: bold;
 }
 
 .property-color {
-    color: rgb(201, 148, 0);
+    color: rgb(216, 119, 0);
     font-weight: bold;
     font-family: sans-serif;
+}
+
+.example-color {
+    color: rgb(183, 0, 211);
+    font-weight: bold;
 }
