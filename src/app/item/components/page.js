@@ -114,7 +114,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'liquid_clipped - 液体への判定',
-        path: ''
+        path: '/liquid_clipped'
     },
     {
         name: 'max_stack_size - 最大スタック数',
