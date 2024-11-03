@@ -154,7 +154,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'tags - タグ',
-        path: ''
+        path: '/tags'
     },
     {
         name: 'throwable - 投擲',
