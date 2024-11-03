@@ -138,7 +138,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'shooter - 発射',
-        path: ''
+        path: '/shooter'
     },
     {
         name: 'should_despawn - デスポーン',
