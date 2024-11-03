@@ -74,7 +74,7 @@ const propertyList = ListGrid('コンポーネント一覧', [
     },
     {
         name: 'dyeable - 染色',
-        path: ''
+        path: '/dyeable'
     },
     {
         name: 'enchantable - エンチャント',
