@@ -118,7 +118,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'max_stack_size - 最大スタック数',
-        path: ''
+        path: '/max_stack_size'
     },
     {
         name: 'projectile - 発射体',
