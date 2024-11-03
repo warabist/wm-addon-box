@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム entity_placerコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'entity_placer - エンティティ設置',
     description: 'エンティティを設置できるようにする。',
     type: 'object',
@@ -112,7 +112,7 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

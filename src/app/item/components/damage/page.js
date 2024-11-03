@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム damageコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'damage - 攻撃力',
     description: '攻撃力をつけられる。',
     type: 'integer | object',
@@ -25,7 +25,7 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

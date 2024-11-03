@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム description';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'description',
     description: 'アイテムのIDや種類を決めることができるプロパティ。',
     type: 'object',
@@ -55,7 +55,7 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

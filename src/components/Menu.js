@@ -2,14 +2,15 @@ import Link from 'next/link';
 
 /**
  * タイトルとリンクテキストで構成されるメニュー。
- * @param {string} title 
+ * @param {Object} props
+ * @param {string} props.title 
  * @param {{
  *   text: string,
  *   path: string
- * }[]} listItems
+ * }[]} props.listItems
  * @returns {JSX.Element}
  */
-export default function Munu(title, listItems) {
+export default function Munu({ title, listItems }) {
 
     return (
         <div className='menu-background'>

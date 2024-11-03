@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム diggerコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'digger - 破壊ツール',
     description: 'アイテムを破壊ツールにできる。',
     type: 'object',
@@ -82,7 +82,7 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

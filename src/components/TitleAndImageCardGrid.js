@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 /**
  * タイトルと画像を含んだアイテムを持つグリッド。クリックするとパスのページに飛ぶ。
+ * @param {Object} props
  * @param {{ 
  * title: string, 
  * image: { 
@@ -13,10 +14,10 @@ import Link from 'next/link';
  *   blurHeight: number
  * }, 
  * page: string
- * }[]} items
+ * }[]} props.items
  * @returns {JSX.Element}
  */
-export default function TitleAndImageCardGrid(items) {
+export default function TitleAndImageCardGrid({ items }) {
 
     return (
         <div className='title-and-image-card-grid'>

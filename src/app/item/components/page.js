@@ -3,7 +3,7 @@
 import PropertyDefinition from "@/components/PropertyDefinition";
 import ListGrid from "@/components/ListGrid";
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'components',
     description: 'アイテムの性質を決めるコンポーネントをいれるプロパティ。',
     type: 'object',
@@ -21,9 +21,9 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
-const propertyList = ListGrid('コンポーネント一覧', [
+const propertyList = <ListGrid title="コンポーネント一覧" basePath="/item/components" listItems={[
     {
         name: 'allow_off_hand - オフハンドの許可',
         path: '/allow_off_hand'
@@ -172,7 +172,7 @@ const propertyList = ListGrid('コンポーネント一覧', [
         name: 'wearable - 着用',
         path: ''
     }
-], '/item/components');
+]} />;
 
 export default function Page() {
     return (

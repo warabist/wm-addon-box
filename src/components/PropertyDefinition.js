@@ -1,6 +1,7 @@
 import VerticalLine from "./VerticalLine";
 import CodeBlock from "./CodeBlock";
 import parse from 'html-react-parser';
+import { useState } from 'react';
 
 /**
  * @typedef {Object} Definition
@@ -13,10 +14,11 @@ import parse from 'html-react-parser';
 
 /**
  * JSONの、プロパティに入る値の説明
- * @param {Definition} definition 
- * @param {boolean} isChild 
+ * @param {Object} props
+ * @param {Definition} props.definition 
+ * @param {boolean} props.isChild 
  */
-export default function PropertyDefinition(definition, isChild = false) {
+export default function PropertyDefinition({ definition, isChild = false }) {
 
     const { name, description, type, properties, examples } = definition;
 
@@ -48,7 +50,7 @@ export default function PropertyDefinition(definition, isChild = false) {
                                 {type.includes('object[]') ? 'アイテムプロパティ' : 'プロパティ'}
                             </summary>
                             <div className="description"> {/**子を右へ */}
-                                {properties.map((property, index) => <div key={String(index)}>{PropertyDefinition(property, true)}</div>)}
+                                {properties.map((property, index) => <div key={String(index)}><PropertyDefinition definition={property} isChild={true} /></div>)}
                             </div>
                         </details> : <div></div>
                     }
@@ -61,7 +63,7 @@ export default function PropertyDefinition(definition, isChild = false) {
 
                             {/**コード */}
                             {examples.map((example, index) =>
-                                <div key={String(index)}>{CodeBlock(example)}</div>
+                                <div key={String(index)}><CodeBlock data={example} /></div>
                             )}
                         </div> : <div></div>
                     }

@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム block_placerコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'block_placer - ブロック設置',
     description: 'ブロックを設置できるようにする。',
     type: 'object',
@@ -71,7 +71,7 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

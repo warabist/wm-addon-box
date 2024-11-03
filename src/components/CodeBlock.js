@@ -1,8 +1,9 @@
 /**
  * コードブロック
- * @param {{ name: string, code: string }} data 
+ * @param {Object} props
+ * @param {{ name: string, code: string }} props.data 
  */
-export default function CodeBlock(data) {
+export default function CodeBlock({ data }) {
 
     return (
         <div>

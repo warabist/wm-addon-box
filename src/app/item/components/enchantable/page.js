@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム enchantableコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'enchantable - エンチャント',
     description: 'アイテムに適用可能なエンチャントを設定する。',
     type: 'object',
@@ -28,7 +28,7 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

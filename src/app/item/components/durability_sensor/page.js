@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム durability_sensorコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'durability_sensor - 耐久センサー',
     description: 'アイテムの耐久値が減ったときに指定したパーティクルやサウンド等のエフェクトを発生させることができる。',
     type: 'object',
@@ -45,7 +45,7 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

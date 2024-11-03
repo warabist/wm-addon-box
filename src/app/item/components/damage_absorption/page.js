@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム damage_absorptionコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'damage_absorption - 吸収ダメージ設定',
     description: 'アイテムが防具の時、このコンポーネントで指定したダメージの種類のみダメージが吸収される。吸収したダメージは耐久値を低下させる。wearable、durabilityコンポーネントが必要。',
     type: 'object',
@@ -22,7 +22,7 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム dyeableコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'dyeable - 染色',
     description: 'アイテムを染色可能にする。アイテムのもとのテクスチャは iconコンポーネント/textures/dyed で指定し、画像はtga形式にする必要がある。',
     type: 'object',
@@ -28,7 +28,7 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

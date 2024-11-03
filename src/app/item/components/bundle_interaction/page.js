@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム bundle_interactionコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'bundle_interaction - バンドルインタラクション',
     description: 'バンドルのようにインタラクトでアイテムを出せるようにする。storage_itemコンポーネントが必要。',
     type: 'object',
@@ -22,7 +22,7 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

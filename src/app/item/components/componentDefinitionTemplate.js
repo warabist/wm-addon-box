@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム Aコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: '',
     description: '',
     type: '',
@@ -14,7 +14,7 @@ const definition = PropertyDefinition({
             code: ``
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム allow_off_handコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'allow_off_hand - オフハンドの許可',
     description: 'アイテムをオフハンドで持つことを許可するか。',
     type: 'boolean | object',
@@ -25,7 +25,7 @@ const definition = PropertyDefinition({
 }`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (

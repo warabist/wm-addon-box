@@ -3,7 +3,7 @@ import PropertyDefinition from "@/components/PropertyDefinition";
 
 const title = 'アイテム custom_componentsコンポーネント';
 
-const definition = PropertyDefinition({
+const definition = <PropertyDefinition definition={{
     name: 'custom_components - カスタムコンポーネント',
     description: 'ScriptAPIで読み込まれたカスタムコンポーネントを指定。1.21あたりのアップデートで消えたevent関係と同じような事ができる。',
     type: 'string[]',
@@ -13,7 +13,7 @@ const definition = PropertyDefinition({
             code: `"minecraft:custom_components": [ "my_component:on_use" ]`
         }
     ]
-});
+}} />;
 
 export default function Page() {
     return (
