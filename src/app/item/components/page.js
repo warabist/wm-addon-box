@@ -150,7 +150,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'storage_item - ストレージ',
-        path: ''
+        path: '/storage_item'
     },
     {
         name: 'tags - タグ',
