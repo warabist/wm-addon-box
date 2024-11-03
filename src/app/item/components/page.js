@@ -106,7 +106,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'icon - アイコン',
-        path: ''
+        path: '/icon'
     },
     {
         name: 'interact_button - 使用ボタン',
