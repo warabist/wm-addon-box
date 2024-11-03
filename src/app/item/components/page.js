@@ -102,7 +102,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'hover_text_color - ホバー時の文字色',
-        path: ''
+        path: '/hover_text_color'
     },
     {
         name: 'icon - アイコン',
