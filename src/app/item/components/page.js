@@ -142,7 +142,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'should_despawn - デスポーン',
-        path: ''
+        path: '/should_despawn'
     },
     {
         name: 'stacked_by_data - 別データ値とのスタック',
