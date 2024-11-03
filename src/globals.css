@@ -41,6 +41,15 @@ code {
     font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
+@media screen and (max-width:450px) {
+    code {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(217, 217, 217);
+        font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    }
+}
+
 pre {
     padding: 10px;
     background-color: rgb(49, 49, 49);
@@ -169,7 +178,7 @@ header h1 {
     margin-left: 15px;
 }
 
-.property-grid {
+.list-grid {
     display: grid;
     width: auto;
     grid-template-columns: repeat(3, 1fr);
@@ -177,13 +186,31 @@ header h1 {
     margin-left: auto;
 }
 
-.property-grid-item {
+@media screen and (max-width:1100px) {
+    .list-grid {
+        display: grid;
+        width: auto;
+        grid-template-columns: 1fr;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.list-grid-item {
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin-bottom: 4px;
 }
 
-.property-grid-item:hover {
+@media screen and (max-width:500px) {
+    .list-grid-item {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+    }
+}
+
+.list-grid-item:hover {
     text-decoration: underline;
     color: white;
 }

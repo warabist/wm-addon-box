@@ -13,9 +13,9 @@ export default function PropertyList(title, properties, basePath = '') {
         <div>
             <h2>{title}</h2>
             <VerticalLine element={
-                <div className="property-grid">
+                <div className="list-grid">
                     {properties.map((property, index) =>
-                        <Link className="property-grid-item" href={basePath + property.path} key={String(index)}>
+                        <Link className="list-grid-item" href={basePath + property.path} key={String(index)}>
                             <li>{property.name}</li>
                         </Link>
                     )}
