@@ -166,7 +166,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'use_modifiers - 使用設定',
-        path: ''
+        path: '/use_modifiers'
     },
     {
         name: 'wearable - 着用',
