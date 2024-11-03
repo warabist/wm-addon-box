@@ -122,7 +122,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'projectile - 発射体',
-        path: ''
+        path: '/projectile'
     },
     {
         name: 'rarity - 希少度',
