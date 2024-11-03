@@ -70,7 +70,7 @@ const propertyList = ListGrid('コンポーネント一覧', [
     },
     {
         name: 'durability_sensor - 耐久センサー',
-        path: ''
+        path: '/durability_sensor'
     },
     {
         name: 'dyeable - 染色',
