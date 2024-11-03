@@ -126,11 +126,11 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'rarity - 希少度',
-        path: ''
+        path: '/rarity'
     },
     {
         name: 'record - レコード',
-        path: ''
+        path: '/record'
     },
     {
         name: 'repairable - 修理',
