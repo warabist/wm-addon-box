@@ -170,7 +170,7 @@ const propertyList = <ListGrid title="コンポーネント一覧" basePath="/it
     },
     {
         name: 'wearable - 着用',
-        path: ''
+        path: '/wearable'
     }
 ]} />;
 
