@@ -10,7 +10,7 @@ const definition = <PropertyDefinition definition={{
     properties: [
         {
             name: 'absorbable_causes [必須]',
-            description: '吸収させたいダメージの種類(minecraft damage causeで調べればでてくるはず)を指定する。',
+            description: '吸収させたいダメージの種類を指定する。<a href="https://learn.microsoft.com/en-us/minecraft/creator/reference/content/addonsreference/examples/addonentities?view=minecraft-bedrock-stable#entity-damage-source">ダメージの種類一覧</a>',
             type: 'string[]'
         }
     ],
